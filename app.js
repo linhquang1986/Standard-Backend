@@ -1,14 +1,13 @@
-#!/usr/bin/env node
-var fs = require('fs')
-var path = require('path')
-var appConfig = require('./config')
+var fs = require('fs');
+var path = require('path');
+var appConfig = require('./config');
 var http = require('http')
 var https = require('https')
 
 var redis = require('redis')
-//var redisClient = createRedisClient('client')
-//var redisSubscriber = createRedisClient('subscriber')
-//var redisPublisher = createRedisClient('publisher')
+// var redisClient = createRedisClient('client')
+// var redisSubscriber = createRedisClient('subscriber')
+// var redisPublisher = createRedisClient('publisher')
 
 var express = require('express')
 var cookieParser = require('cookie-parser')
@@ -21,7 +20,6 @@ global.fileServeRoot = path.join(__dirname, 'public')
 global.rootDirectory = __dirname
 var Logger = require('./plugins/logger/logger')
 const { info, error } = Logger.init(__filename)
-
 
 info('                   Starting up                     ')
 info(' __    __       ______                                          ')

@@ -35,6 +35,7 @@
     "node-quickbooks": "2.0.11",
     "nodemailer": "2.6.4",
     "nodemon": "1.11.0",
+    "q": "^1.5.1",
     "redis": "2.6.3",
     "request": "2.79.0",
     "socket.io": "1.6.0",

@@ -1,9 +1,16 @@
 var express = require('express');
+var path = require('path');
 var appConfig = require('./config');
+var bodyParser = require('body-parser');
 var app = express();
 //var mysql = require('mysql');
-require('./models/mongod/connection.js')
-app.use(require('./router/user.js'));
+
+app.use(bodyParser.json());
+app.use(express.static(path.join(__dirname, 'public')));
+
+require('./models/mongod/connection.js');
+
+app.use(require('./router'));
 
 app.listen(5000);
 console.log('Server running on port 5000');

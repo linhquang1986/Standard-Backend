@@ -1,4 +1,5 @@
-var Img = require('./../models/mongod/img');
+
+var Img = require('../models').database_mongod.img;
 var ObjectId = require('mongoose').Types.ObjectId;
 
 exports.upload_img = (req, res) => {

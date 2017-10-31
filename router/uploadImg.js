@@ -2,7 +2,7 @@ var express = require('express');
 var router = express.Router();
 var bodyParser = require('body-parser');
 var multer = require('multer');
-var Img = require('./../controllers/uploadImg');
+var Img = require('../controllers').uploadController;
 
 router.use(bodyParser.json());
 

@@ -1,4 +1,4 @@
-var User = require('./../models/mongod/user');
+var User = require('../models').database_mongod.user;
 var ObjectId = require('mongoose').Types.ObjectId;
 
 exports.user_list = (req, res) => {

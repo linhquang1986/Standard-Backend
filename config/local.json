@@ -53,7 +53,7 @@
       "rCA": "/server/certs/localhost-ca.crt",
       "passphrase": ""
     },
-    "session_secret": "mySecretKey",
+    "session_secret": "'1As23Fdfgb34345!$#fd'",
     "crypto": {
       "algorithm": "aes-256-ctr",
       "password": "d6F3Efeq-QZ.21a"

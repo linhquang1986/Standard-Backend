@@ -2,14 +2,14 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var userSchema = new Schema({
-  name: String,
+  name: { type: String, default: '' },
   username: { type: String, required: true, unique: true },
-  passwork: { type: String, required: true },
+  password: { type: String, required: true },
   admin: Boolean,
-  address: String,
-  email: String,
-  created_at: Date,
-  updated_at: Date
+  address: { type: String, default: '' },
+  email: { type: String, default: '' },
+  created_at: { type: Date, default: Date.now },
+  updated_at: { type: Date, default: null }
 }, { versionKey: false });
 
 var User = mongoose.model('User', userSchema);

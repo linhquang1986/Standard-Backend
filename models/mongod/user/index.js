@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var mydatabase = require('../connection');
 
 var userSchema = new Schema({
   name: { type: String, default: '' },
@@ -12,5 +13,5 @@ var userSchema = new Schema({
   updated_at: { type: Date, default: null }
 }, { versionKey: false });
 
-var User = mongoose.model('User', userSchema);
+var User = mydatabase.model('User', userSchema);
 module.exports = User;

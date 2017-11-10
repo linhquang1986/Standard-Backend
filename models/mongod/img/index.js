@@ -1,5 +1,6 @@
 var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
+var mydatabase = require('../connection');
 
 var imgSchema = new Schema({
     url: String,
@@ -21,5 +22,5 @@ var imgSchema = new Schema({
     created_at: Date
 });
 
-var Img = mongoose.model('Img', imgSchema);
+var Img = mydatabase.model('Img', imgSchema);
 module.exports = Img;

@@ -2,7 +2,7 @@
   "server": {
     "protocol": "https",
     "domain": "localhost",
-    "port": 443
+    "port": 5000
   },
   "redis": {
     "domain": "redis",
@@ -11,13 +11,13 @@
   "mongo": {
     "username": "",
     "password": "",
-    "host_one": "mongo",
+    "host_one": "localhost",
     "port_one": "27017",
     "host_two": "",
     "port_two": "",
     "host_three": "",
     "port_three": "",
-    "dbs": ["auvenir","gdrive","finicity","quickbooks"],
+    "dbs": ["mydatabase"],
     "path": "/server/data",
     "useReplica": false,
     "options": {
